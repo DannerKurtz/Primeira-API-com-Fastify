@@ -112,5 +112,6 @@ server.delete('/videos/:id', async (request, reply) => {
 });
 // o server.listen irá fazer com que a api escute pela porta desejada.
 server.listen({
-    port:3232,
+    host: '0.0.0.0',
+    port: process.env.PORT ?? 3232,
 })
