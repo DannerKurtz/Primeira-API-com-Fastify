@@ -1,0 +1,29 @@
+POST http://localhost:3232/videos
+# precisamos informar o navegador do tipo do corpo de requisição neste caso é o json.
+Content-Type: application/json
+
+{
+    "title": "video  NODE",
+    "description": "teste",
+    "duration": "120"
+}
+
+###
+
+GET http://localhost:3232/videos?search=
+
+###
+
+PUT http://localhost:3232/videos/5a9289f5-601a-4522-b8e4-a8bf5dd904e0
+# precisamos informar o navegador do tipo do corpo de requisição neste caso é o json.
+Content-Type: application/json
+
+{
+    "title": "video 02",
+    "description": "teste",
+    "duration": "120"
+}
+
+###
+
+DELETE http://localhost:3232/videos/5a9289f5-601a-4522-b8e4-a8bf5dd904e0
